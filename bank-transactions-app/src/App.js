@@ -9,7 +9,7 @@ function App() {
   const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:3000/transactions')
+    fetch('https://bank-transactions.onrender.com/transactions')
       .then(response => response.json())
       .then(data => setTransactions(data))
       .catch(error => console.log(error));
